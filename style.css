@@ -1,0 +1,112 @@
+/* 
+each topic box will be white text on black back
+topic headers will be of type serif font while body text will be sans
+the padding in each topic box will be a gradient color of the previous
+I intend to document in this style whether multi-line or not.
+*/
+/*
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #ebdaf5
+	color-stop(1, #39005C)
+);
+background-image: -o-linear-gradient(bottom, #ebdaf5 0%, #39005C 100%);
+background-image: -moz-linear-gradient(bottom, #ebdaf5 0%, #39005C 100%);
+background-image: -webkit-linear-gradient(bottom, #ebdaf5 0%, #39005C 100%);
+background-image: -ms-linear-gradient(bottom, #ebdaf5 0%, #39005C 100%);
+background-image: linear-gradient(to bottom, #ebdaf5 0%, #39005C 100%);
+for later use, when I can figure out how to use it.
+source: http://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear
+*/
+
+/* testing and discovering how to create a title case and make other
+changes. set it school colors. I got spirit!
+*/
+.space {
+  padding: 5px;
+  margin: 0px;
+}
+  
+h1 {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #990099;
+	margin: 20px;
+	background-color: black;
+	border-radius: 4px;
+	text-transform: capitalize; 
+	/* font-size:medium; */
+}
+/*
+give some padding and set to title case.
+*/
+
+h2 {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px;
+	text-transform: capitalize; 
+}
+
+/*
+arrgh! no Optima! found acceptable fonts at:
+http://www.w3schools.com/cssref/css_websafe_fonts.asp
+*/
+body {
+	font-family: Comic Sans MS;
+	align="right";
+}
+
+/* the border-radius attribute makes
+the corners rounded and the margin 
+clears out space for the stuff inside
+the lesson divs. Try seeing what 
+happens when you comment out the 
+rule that says
+
+    padding: 10px; 
+
+by changing it to
+
+	padding: 10px;
+*/
+
+.lesson {
+	background-color: violet;
+	border-radius: 20px;
+	color: white;
+	padding: 10px;
+}
+
+.concept {
+	background-color: #DFEAF1;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+	color: black;
+	font-size:medium;
+}
+
+.concept-title {
+	font-size: 20px;
+	margin: 8px;
+	text-align: left;
+	border-radius: 4px;
+	color: black;
+	text-transform: capitalize;
+}
+
+.concept-description {
+	/* font-weight: lighter; */
+	margin: 6px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
