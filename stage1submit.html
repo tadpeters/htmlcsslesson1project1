@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>
+    Tad's Notes
+  </title>
+<!--   link tag to style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--
+Each lesson div has a class="lesson". Then concepts, concept
+titles, and concept descriptions also have been put into divs
+with class names.
+-->
+
+<body>
+  <h1>important concepts - by tad</h1>
+  <!-- h1 tag gets capped in style -->
+
+    <div class="lesson">
+		<h2>project 1 lesson 1: relearn programming and change paradigm</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>six peas</span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+			<p>
+				The first lesson I re-learned. It was called the 6 P's.<br>
+				Previous Planning Prevents Piss Poor Performance.<br>
+				If The Instructor can be seen on video making pretty paper dolls to do layout, I imagine that is a practice I should adopt.
+			</p>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="pppppp500.jpg" alt="photo of my paper layout">
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+
+     <div class="lesson">
+		<h2>project 1 lesson 2: concepts not previously understood</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>layout of HTML has come a long way since '96</span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+				<ul>
+					<li>in-line affects a line</li>
+					<li>block elements are for layout</li>
+					<li>in-lines are for content manipulation</li>
+					<li>closing tags control layout</li>
+					<li>open tags manipulate content</li>
+				</ul>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="blkvsinline.png" alt="snip of block vs inline html" width="300" height="300" />
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+	<div class="lesson">
+		<h2>project 1 lesson 3: other items of noted</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>proving I can copy my own code</span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+				<ul>
+					<li>plagiarizing yourself = !plagiarizing</li>
+					<li>increases efficiency</li>
+					<li>minimize errors</li>
+					<p><span><strong>BOXES SOLVED!</strong></span><br>
+						There are two techniques you can use to help deal with sizing issues.
+
+						Set sizes in terms of percentages rather than pixels.
+						Set the box-sizing attribute to border-box for every element. 
+						Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.
+						<br>
+						<span><strong>Box Positioning</strong></span><br>
+						Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.
+						Adding the rule display: flex; to the appropriate CSS will override this behaviour and let divs appear next to each other.
+						<br>
+						<span><strong>GOOGLE IS YOUR FRIEND</strong></span><br>
+						understanding the syntax of the answer is difficult in the novice stage, but becomes easier quickly with familiarity.
+						further complications are added, learning a new editor (or any editor) the incongruity of the material being provided and
+						learning how to think about top down, it must be very difficult if you have never done anything like this before.
+						I have 30 years  of experience to tap into, I feel for the true newbie. keep at it, it gets easier.
+					</p>
+				</ul>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="snipofhtmlinnotepaddplusplus.png" alt="snip of block vs inline html" width="300" height="300" />
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+	<div class="lesson">
+		<h2>project 2 work session 1: actual code examples</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>the python i wanted to write for the lessons</span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+				<p>
+					<span>the question put before us was to compute the amount of mins in 7 weeks. udacity did not recognize my answer as correct. I will present it here now:</span><br>
+						<code>
+							weeks = 7<br>
+							days = 7<br>
+							hours = 24<br>
+							mins = 60<br>
+							time = weeks * days * hours * mins<br>
+							print 'The amount of time we have to complete this section of the course is ', time, 'minutes.'<br>
+							<br>
+							<span>I figured the python interpreter would not allow me to pass variables into a function, so this was as dumbed down as I would accept.</span>
+							<br>
+							<br>
+							# Write Python code to print out how far light travels in centimeters in one nanosecond.  Use the values defined below.<br>
+							# speed_of_light = 299792458   meters per second<br>
+							# centimeters = 100            one meter is 100 centimeters<br>
+							# nanosecond = 1.0/1000000000  one billionth of a second<br>
+							<br>
+							speed_of_light = 299792458  # meters per second<br>
+							centimeters = 100           # one meter is 100 centimeters<br>
+							nanosecond = 1.0/1000000000 # one billionth of a second<br>
+							how_far_light_travels_in_centimeters_in_one_nanosecond = speed_of_light * centimeters * nanosecond<br>
+							print 'how far light travels in centimetres in one nanosecond', how_far_light_travels_in_centimeters_in_one_nanosecond, 'centimeters.'<br>
+						</code>
+						<br>
+						<span class="italic">Adm. Grace Hopper, Also the creator of the term 'bug'. Derived by finding an actual insect caught in a relay circuit that prevented its operation. It prevented the completion of the circuit.
+					</span>
+				</p>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="Commodore_Grace_M._Hopper,_USN_wikipedia.jpg" alt="graphic from wikipedia.com of Grace Hopper" width="300" height="300"/>
+			  <br>
+			  <p>graphic pilfered from http://en.wikipedia.org/wiki/Grace_Hopper</p>
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+	<div class="lesson">
+		<h2>project 2 work session 1: abstract notes on computer programming</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>using programming languages vs common language</span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+				<span><strong>Ambiguity</strong></span><br>
+				<span>Common languages contain things like 'english' or spin or body language or context. Programming languages seek to remove all those ambiguous parts of communication. Our goal in using programming language is not to communicate ideas, but to command a machine to do exactly as it is told, without question and without comment.
+				</span><br><br>
+				<span><strong>Verbosity</strong></span><br>
+				<span>Using programming languages presents different limits on the nature and amount of verbs for that language. I think all verbs are singular in programming languages although the same singular verb can be executed multiple times in a particular line of code using control structures.
+				</span><br><br>
+				<p><strong>Elements of Grammar</strong></p>
+					<p>
+						Non-terminal -=> Replacement<br>
+						A sentence is non terminal -=> sub verb object<br>
+						The goal of programming languages is to replace non-terminals with terminals<br>
+						grammar seeks to provide a large language with a small set of rules.<br>
+					</p>
+					<span><strong>Python Grammar</strong></span><br>
+						<code>
+							Recursive Grammar Definition:<br>
+							expression -=> expression operator expression<br>
+							expression -=> number<br>
+							operator -=> +<br>
+							operator -=> *<br>
+							number -=> 0, 1, ...<br>
+							<br>
+							Example Derivation<br>
+							expression -=> expression operator expression<br>
+							expression -=>  1 	   + or *	       1<br>
+							expression -=>  1      + or *    (expression)<br>
+						</code>
+			</div> <!-- concept-description -->
+			<div class="image">
+				<img src="300px-Manchester_Mark2_wikipedia.jpg" alt="graphic from wikipedia.com of Manchester Mark 1 computer" width="300" height="300"/>
+				<br>
+				<p>graphic pilfered from https://en.wikipedia.org/wiki/Manchester_Mark_1</p>
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+    <div class="lesson">
+		<h2>paradigm</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>six </span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+			<p>
+				The first lesson I re-learned. It was called the 6 P's.<br>
+				Previous Planning Prevents Piss Poor Performance.<br>
+				If The Instructor can be seen on video making pretty paper dolls to do layout, I imagine that is a practice I should adopt.
+			</p>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="pppppp500.jpg" alt="photo of my paper layout">
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+</body>
+
+
+</html>
