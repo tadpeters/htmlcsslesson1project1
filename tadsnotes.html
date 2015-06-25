@@ -18,16 +18,16 @@
 		  </div> <!-- concept-title -->
 		  <div class="row">
 			<div class="concept-description">
-			<ol>
+			<ul>
 				<li>The first lesson I re-learned. It was called the 6 P's.</li>
 				<li><strong>Previous Planning Prevents Piss Poor Performance.</strong></li>
 				<li>If The Instructor can be seen on video making pretty paper dolls to do layout, I imagine that is a practice I should adopt.</li>
-				<li>Structured programming is extremely important. Some of the rules that I follow:</li>
+				<li style="list-style-type:circle">Structured programming is extremely important. Some of the rules that I follow:</li>
 				<li style="list-style-type:circle">Divide programs into functions.</li>
 				<li style="list-style-type:circle">Functions perform only one task.</li>
 				<li style="list-style-type:circle">Variable names are meaningful.</li>
 				<li style="list-style-type:circle">Throughly document everything.</li>
-			</ol>
+			</ul>
 			</div> <!-- concept-description -->
 			<div class="image">
 			  <img src="pppppp500.jpg" alt="photo of my paper layout" width="300" height="300" />
@@ -53,7 +53,7 @@
 					<li>Open tags manipulate content</li>
 				</ul>
 				<span>Repetition:<br>
-					According to Martin Fowler of <a href="http://martinfowler.com/ieeeSoftware/repetition.pdf">thoughtworks.com, </a>its a nice easy 3 page read. The concept (written about after 1996 when I began to learn html and and way after 1981 when I first began programming) is a thing called DRY (dont repeat yourself). He goes on to talk about patterns and good design of programs. In Summary, common tasks should be examples of DRY. <q>Thinking in terms of duplication and its problems also helps you understand the benefits of patterns.</q>
+					According to Martin Fowler of <a href="http://martinfowler.com/ieeeSoftware/repetition.pdf">thoughtworks.com</a> its a nice easy 3 page read. The concept (written about after 1996 when I began to learn html and way after 1981 when I first began programming) is a thing called DRY (dont repeat yourself). He goes on to talk about patterns and good design of programs. In Summary, common tasks should be examples of DRY. <q>Thinking in terms of duplication and its problems also helps you understand the benefits of patterns.</q>
 				</span>
 			</div> <!-- concept-description -->
 			<div class="image">
@@ -64,7 +64,7 @@
     </div> <!-- lesson -->
 	
 	<div class="lesson" id="lesson3">
-		<h2>project 1 lesson 3: other items of noted</h2>
+		<h2>project 1 lesson 3: other items of note</h2>
 		<!-- h2 tag gets capped in style -->
 		<div class="concept">
 		  <div class="concept-title">
@@ -73,26 +73,25 @@
 		  <div class="row">
 			<div class="concept-description">
 				<ul>
-					<li>plagiarizing yourself = !plagiarizing</li>
-					<li>increases efficiency</li>
-					<li>minimize errors</li>
+					<li>Plagiarizing yourself = !plagiarizing</li>
+					<li>Increases efficiency</li>
+					<li>Minimize errors</li>
 				</ul>
-				<p>		BOXES SOLVED!<br>
+				<p>		Boxes Solved!<br>
 						There are two techniques you can use to help deal with sizing issues.
-
 						Set sizes in terms of percentages rather than pixels.
 						Set the box-sizing attribute to border-box for every element. 
 						Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.
-						<br>
-						<span><strong>Box Positioning</strong></span><br>
-						Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.
-						Adding the rule display: flex; to the appropriate CSS will override this behaviour and let divs appear next to each other.
-						<br>
-						<span><strong>GOOGLE IS YOUR FRIEND</strong></span><br>
-						understanding the syntax of the answer is difficult in the novice stage, but becomes easier quickly with familiarity.
-						further complications are added, learning a new editor (or any editor) the incongruity of the material being provided and
-						learning how to think about top down, it must be very difficult if you have never done anything like this before.
-						I have 30 years  of experience to tap into, I feel for the true newbie. keep at it, it gets easier.
+						<br><br>
+						Box Positioning<br>
+						<code>Divs</code> are block elements (as opposed to in-line), so by default they take up the entire width of a page.
+						Adding the rule <code>display: flex;</code> to the appropriate CSS will override this behaviour and let divs appear next to each other.
+						<br><br>
+						Google is your friend<br>
+						Understanding the syntax of the answer is difficult in the novice stage, but becomes easier quickly with familiarity.
+						Further complications are added; learning a new editor (or any editor), the incongruity of the material being provided and
+						learning how to think about top down. It must be very difficult if you have never done anything like this before.
+						I have 30 years  of experience to tap into, I feel for the true newbie. Keep at it, it gets easier.
 				</p>
 			</div> <!-- concept-description -->
 			<div class="image">
@@ -107,12 +106,12 @@
 		<!-- h2 tag gets capped in style -->
 		<div class="concept">
 		  <div class="concept-title">
-			<span>the python i wanted to write for the lessons</span><br>
+			<span>the python i wanted to write for the lesson</span><br>
 		  </div> <!-- concept-title -->
 		  <div class="row">
 			<div class="concept-description">
 				<p>
-					<span>the question put before us was to compute the amount of mins in 7 weeks. udacity did not recognize my answer as correct. I will present it here now:</span><br>
+					<span>the question put before us was to compute the amount of mins in 7 weeks. Udacity did not recognize my answer as correct. I will present it here now:</span><br>
 						<code>
 							weeks = 7<br>
 							days = 7<br>
@@ -191,10 +190,19 @@
 				
 				Making functions is thinking about the logic and steps required to complete a task. Example, given a list of numbers find the greatest value in that list and return it.<br><br>
 				
-				Using the list is calling that function to find the value from a given list.<br><br>
-				
 				Return statements in functions are not required. Data can be manipulated and acted upon without a procedure returning a value. However, returning values from a procedure provides data that can be tested against and provides clarity in our coding with expected results.
 			</p>
+			<code>
+				pseudo code bigger:<br>
+				if a > b<br>
+				larger = a<br>
+				else larger = b<br>
+				<br>
+				if larger > c<br>
+				then return<br>
+				else larger = c<br>
+				return larger<br>
+			</code>
 			</div> <!-- concept-description -->
 			<div class="image">
 			  <img src="nerd-flow-chart1-300x225.png" alt="nerd, dork, geek or boring flowchart">
@@ -215,11 +223,11 @@
 			  <div class="row">
 				<div class="concept-description">
 					<p>
-						This is pretty damn cool!! Lists and lists of lists is a super cool concept. The ability to change a list element at any time presents amazing possibilities including constructing databases, web scraping info and delivering an entire web page by issuing the command print page[0]<br><br>
+						This is pretty damn cool!! Lists and lists of lists is a super cool concept. The ability to change a list element at any time presents amazing possibilities including constructing databases, web scraping info and delivering an entire web page by issuing the command print page[0].<br><br>
 						
-						Mutability or the ability to mutate a list provides amazing power that is at the root level of the language. the three most basic commands in programming; add, change, delete on the elements of list makes my head spin with glee.<br><br>
+						Mutability, or the ability to mutate a list provides amazing power that is at the root level of the language. The three most basic commands in programming; add, change, delete on the elements of list makes my head spin with glee.<br><br>
 						
-						However, there is cause for concern. With great power, comes great responsibility and that is illustrated in the difference between 'append' and +. A programmer needs to pay special attention to appending a list to a list. This will not add each individual item of the list, it will add 1 element, the list!<br><br>
+						However, there is cause for concern. With great power, comes great responsibility and that is illustrated in the difference between 'append' and '+'. A programmer needs to pay special attention to appending a list to a list. This will not add each individual item of the list, it will add 1 element, the list!<br><br>
 					</p>
 				</div> <!-- concept-description -->
 				<div class="image">
