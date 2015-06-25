@@ -2,24 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-  <title>
-    Tad's Notes
-  </title>
-<!--   link tag to style.css -->
+  <title>Tad's Notes</title>
+<!-- link tag to style.css -->
   <link rel="stylesheet" href="style.css">
 </head>
-
-<!--
-Each lesson div has a class="lesson". Then concepts, concept
-titles, and concept descriptions also have been put into divs
-with class names.
--->
 
 <body>
   <h1>important concepts - by tad</h1>
   <!-- h1 tag gets capped in style -->
 
-    <div class="lesson">
+    <div class="lesson" id="lesson1">
 		<h2>project 1 lesson 1: relearn programming and change paradigm</h2>
 		<!-- h2 tag gets capped in style -->
 		<div class="concept">
@@ -28,11 +20,16 @@ with class names.
 		  </div> <!-- concept-title -->
 		  <div class="row">
 			<div class="concept-description">
-			<p>
-				The first lesson I re-learned. It was called the 6 P's.<br>
-				Previous Planning Prevents Piss Poor Performance.<br>
-				If The Instructor can be seen on video making pretty paper dolls to do layout, I imagine that is a practice I should adopt.
-			</p>
+			<dl>
+				<li>The first lesson I re-learned. It was called the 6 P's.</li>
+				<li><strong>Previous Planning Prevents Piss Poor Performance.</strong></li>
+				<li>If The Instructor can be seen on video making pretty paper dolls to do layout, I imagine that is a practice I should adopt.</li><br>
+				<p>Structured programming is extremely important. Some of the rules that I follow:</p>
+				<li style="list-style-type:circle">Divide programs into functions.</li>
+				<li style="list-style-type:circle">Functions perform only one task.</li>
+				<li style="list-style-type:circle">Variable names are meaningful.</li>
+				<li style="list-style-type:circle">Throughly document everything.</li>
+			</dl>
 			</div> <!-- concept-description -->
 			<div class="image">
 			  <img src="pppppp500.jpg" alt="photo of my paper layout" width="300" height="300" />
@@ -41,7 +38,7 @@ with class names.
 		</div> <!-- concept -->
     </div> <!-- lesson -->
 
-     <div class="lesson">
+     <div class="lesson" id="lesson2">
 		<h2>project 1 lesson 2: concepts not previously understood</h2>
 		<!-- h2 tag gets capped in style -->
 		<div class="concept">
@@ -51,21 +48,24 @@ with class names.
 		  <div class="row">
 			<div class="concept-description">
 				<ul>
-					<li>in-line affects a line</li>
-					<li>block elements are for layout</li>
-					<li>in-lines are for content manipulation</li>
-					<li>closing tags control layout</li>
-					<li>open tags manipulate content</li>
+					<li>In-line affects a line</li>
+					<li>Block elements are for layout</li>
+					<li>In-line elements are for content manipulation</li>
+					<li>Closing tags control layout</li>
+					<li>Open tags manipulate content</li>
 				</ul>
+				<span>Repetition:<br>
+					According to Martin Folwer of http://martinfowler.com/ieeeSoftware/repetition.pdf its a nice easy 3 page read. The concept (written about after 1996 when I began to learn html and and way after 1981 when I first began programming) is a thing called DRY (dont repeat yourself). He goes on to talk about patterns and good design of programs. In Summary, common tasks should be examples of DRY. <q>Thinking in terms of duplication and its problems also helps you understand the benefits of patterns.</q>
+				</span>
 			</div> <!-- concept-description -->
 			<div class="image">
-			  <img src="blkvsinline.png" alt="snip of block vs inline html" width="300" height="300" />
+			  <img src="blkvsinline.png" alt="snip of block vs in-line html" width="300" height="300" />
 			</div> <!-- image -->
 		  </div> <!-- row -->
 		</div> <!-- concept -->
     </div> <!-- lesson -->
 	
-	<div class="lesson">
+	<div class="lesson" id="lesson3">
 		<h2>project 1 lesson 3: other items of noted</h2>
 		<!-- h2 tag gets capped in style -->
 		<div class="concept">
@@ -128,7 +128,8 @@ with class names.
 							<br>
 							# Write Python code to print out how far light travels in centimeters in one nanosecond.  Use the values defined below.<br>
 							# speed_of_light = 299792458   meters per second<br>
-							# centimeters = 100            one meter is 100 centimeters<br>
+							# centimeters = 100
+							one meter is 100 centimeters<br>
 							# nanosecond = 1.0/1000000000  one billionth of a second<br>
 							<br>
 							speed_of_light = 299792458  # meters per second<br>
@@ -143,7 +144,7 @@ with class names.
 				</p>
 			</div> <!-- concept-description -->
 			<div class="image">
-			  <img src="Commodore_Grace_M._Hopper,_USN_wikipedia.jpg" alt="graphic from wikipedia.com of Grace Hopper" width="300" height="300" />
+			  <img src="Commodore_Grace_M._Hopper,_USN_wikipedia.jpg" alt="graphic from wikipedia.com of Grace Hopper" />
 			  <br>
 			  <p>graphic pilfered from http://en.wikipedia.org/wiki/Grace_Hopper</p>
 			</div> <!-- image -->
@@ -165,28 +166,7 @@ with class names.
 				</span><br><br>
 				<span><strong>Verbosity</strong></span><br>
 				<span>Using programming languages presents different limits on the nature and amount of verbs for that language. I think all verbs are singular in programming languages although the same singular verb can be executed multiple times in a particular line of code using control structures.
-				</span><br><br>
-				<p><strong>Elements of Grammar</strong></p>
-					<p>
-						Non-terminal -=> Replacement<br>
-						A sentence is non terminal -=> sub verb object<br>
-						The goal of programming languages is to replace non-terminals with terminals<br>
-						grammar seeks to provide a large language with a small set of rules.<br>
-					</p>
-					<span><strong>Python Grammar</strong></span><br>
-						<code>
-							Recursive Grammar Definition:<br>
-							expression -=> expression operator expression<br>
-							expression -=> number<br>
-							operator -=> +<br>
-							operator -=> *<br>
-							number -=> 0, 1, ...<br>
-							<br>
-							Example Derivation<br>
-							expression -=> expression operator expression<br>
-							expression -=>  1 	   + or *	       1<br>
-							expression -=>  1      + or *    (expression)<br>
-						</code>
+				</span>
 			</div> <!-- concept-description -->
 			<div class="image">
 				<img src="300px-Manchester_Mark2_wikipedia.jpg" alt="graphic from wikipedia.com of Manchester Mark 1 computer" width="300" height="300" />
@@ -196,5 +176,63 @@ with class names.
 		  </div> <!-- row -->
 		</div> <!-- concept -->
     </div> <!-- lesson -->
+	
+	<div class="lesson">
+		<h2>stage 2 lesson 3</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">
+			<span>Procedural Thinking </span><br>
+		  </div> <!-- concept-title -->
+		  <div class="row">
+			<div class="concept-description">
+			<p>
+				Functions or procedures, while initially adding to complexity, reduces coding repetition. In the future when I have a library of code and the familiarity with that library coding efficiency will increase. I will recall that I already have written a particular code block to compare which numbers are smallest and which are largest and just copy and paste my already written code into the current project and move on down the road.<br><br>
+				
+				Breaking procedures down to their elementary blocks is useful for solving big problems. For example our code 'bigger' that only takes two parameters can be used to find the result of any number of parameters and still yield one result; the biggest of that list.<br><br>
+				
+				Making functions is thinking about the logic and steps required to complete a task. Example, given a list of numbers find the greatest value in that list and return it.<br><br>
+				
+				Using the list is calling that function to find the value from a given list.<br><br>
+				
+				Return statements in functions are not required. Data can be manipulated and acted upon without a procedure returning a value. However, returning values from a procedure provides data that can be tested against and provides clarity in our coding with expected results.
+			</p>
+			</div> <!-- concept-description -->
+			<div class="image">
+			  <img src="nerd-flow-chart1-300x225.png" alt="nerd, dork, geek or boring flowchart">
+			  <br>
+				<p>graphic pilfered from http://futurescienceleaders.org/engineers2012/2012/09/26/fun-flowcharts/</p>
+			</div> <!-- image -->
+		  </div> <!-- row -->
+		</div> <!-- concept -->
+    </div> <!-- lesson -->
+	
+	<div class="lesson">
+		<h2>focus check point stage 2 lesson 6</h2>
+		<!-- h2 tag gets capped in style -->
+		<div class="concept">
+		  <div class="concept-title">  <!-- concept-title -->
+			<span>structured data, mutability and lists</span>
+		  </div>   <!-- concept-title -->
+			  <div class="row">
+				<div class="concept-description">
+					<p>
+						This is pretty damn cool!! Lists and lists of lists is a super cool concept. The ability to change a list element at any time presents amazing possibilities including constructing databases, web scraping info and delivering an entire web page by issuing the command print page[0]<br><br>
+						
+						Mutability or the ability to mutate a list provides amazing power that is at the root level of the language. the three most basic commands in programming; add, change, delete on the elements of list makes my head spin with glee.<br><br>
+						
+						However, there is cause for concern. With great power, comes great responsibility and that is illustrated in the difference between 'append' and +. A programmer needs to pay special attention to appending a list to a list. This will not add each individual item of the list, it will add 1 element, the list!<br><br>
+					</p>
+				</div> <!-- concept-description -->
+				<div class="image">
+				  <img src="listordie.gif" alt="image of storm trooper holding sign, lists of lists" width="300" />
+				  <br>
+					<p>graphic pilfered from http://beforeitsnews.com/alternative/2013/10/the-list-of-lists-2798904.html</p>
+				</div> <!-- image -->
+		  </div> <!-- row -->
+		  </div> <!-- concept-title -->
+		</div> <!-- concept -->
+	</div> <!-- lesson -->
+	
 </body>
 </html>
